@@ -8,39 +8,23 @@ The topics covered by Eunice include global topography, bathymetry, vegetation, 
 
 The datasets chosen are assembled into structs or types described in detail in the following section. These types have mutable fields and are easily accessible to the Julia REPL and to Julia functions. Each type has one or more associated climate variables and one or more files containing the data which has been downloaded and extracted and/or combined to obtain the actual data reflected by the type. Of key focus is the set of dimension variables which fit normally into one of the patterns (lon, lat), (lon, lat, time), or (lon, lat, lev, time). Instructions on how to inspect and use the types are given below.
 
-Below in the table we see acronyms which should be of some assistance to the user/reader to find the original data sources, and develop as might be needed alternative or additional data sets to those which have been chosen. 
+Below in the table we see acronyms which should be of some assistance to the user/reader to find the original data sources, and develop as might be needed alternative or additional data sets to those which have been chosen. In the table Git means the dataset is in an early GitHub Eunice release and Zen that it will be later using Zenodo.
 
 
-      | Acronym | Name | Types |Topics |
-      |---------|------|-------|-------|
-
-
-|ISIMIP |  Inter-Sectoral Impact Model Inter Comparison Project |  Isimp |  land sea mask |  
-
-| ETOPO |  Earth Topography: Global Relief Model |  Etopo</td><td> topography, bathymetry |  
- 
-| NOAA |  National Ocean and Atmosphere Administration |  Noaa, NoaaTemp, NoaaTempMonthly |  temperature anomalies |  
-
-| NCEI |  National Centers for Environmental Information |  NceiNoaa |  dominant vegitation species |  
-
-| BEST |  Berkeley Earth Surface Temperature Project</td><td>Best |  global temperatures  |  
-
-| CAMS |  Copernicus Climate Monitoring Service |  Cams, CamsCO2, CamsCH4Lev |   carbon dioxide, methane concentrations |  
-
-| OI_SST |  Optimum Interpolation Sea Surface Temperature |  Oisst |   sea surface temperatures |  
-
-| OSCAR2 |  Ocean Surface Current Analysis Real Time v2 |  Oscar2daily, Oscar2monthly |  ocean current velocities |  
-
-| CDS SLA |  Copernicus Climate Data Store, Sea Level Anomalies |  CdsSla |  sea level anomalies |  
-
-| CEMS |  Copernicua Emergency Management Service |  Cems |  fire risk indices |  
-
-| CCI |  European Space Agency Cloud Climate Change Initiative |  CdsCci |  cloud cover data |  
-
-| JRA55 |  Japanese Reanalysis 55 Year Study (1958-present) |  Jra55 |  surface climate data  |  
-
-| ERA5 |  European Center for Medium-Range Weather Forcasts Reanalysis v5 |  Era5, Era5Lev |  surface climate data, cloud cover levels data  |  
-
-| MERRA2 |  Modern Era (1980-present) Retrospective Analysis for Research and Applications |  Merra2, Merra2Lev |  climate data, climate data levels  |  
-
-| CEMSFAS |  Copernicus Emergency Management Flood Analysis System |  CemsFas |  rivers discharge, snow depth, water runoff, soil water indices |  
+| Acronym | Name | Types |Topics | Git/Zen
+|---------|------------|------------|-------|--------|
+|ISIMIP |  Inter-Sectoral Impact Model Inter Comparison Project |  Isimp |  land sea mask |  Git |
+| ETOPO |  Earth Topography: Global Relief Model |  Etopo | topography, bathymetry |  Zen |
+| NOAA |  National Ocean and Atmosphere Administration |  Noaa, NoaaTemp, NoaaTempMonthly |  temperature anomalies |  Git |
+| NCEI |  National Centers for Environmental Information |  NceiNoaa |  dominant vegitation species | Git | 
+| BEST |  Berkeley Earth Surface Temperature Project | Best |  global temperatures  |  Zen |
+| CAMS |  Copernicus Climate Monitoring Service |  Cams, CamsCO2, CamsCH4Lev |   carbon dioxide, methane concentrations |  Git, Zen |
+| OI_SST |  Optimum Interpolation Sea Surface Temperature |  Oisst |   sea surface temperatures |  Git |
+| OSCAR2 |  Ocean Surface Current Analysis Real Time v2 |  Oscar2daily, Oscar2monthly |  ocean current velocities |  Git |
+| CDS SLA |  Copernicus Climate Data Store, Sea Level Anomalies |  CdsSla |  sea level anomalies |  Zen |
+| CEMS |  Copernicua Emergency Management Service |  Cems |  fire risk indices |  Git |
+| CCI |  European Space Agency Cloud Climate Change Initiative |  CdsCci |  cloud cover data |  Git |
+| JRA55 |  Japanese Reanalysis 55 Year Study (1958-present) |  Jra55 |  surface climate data  |  Zen |
+| ERA5 |  European Center for Medium-Range Weather Forcasts Reanalysis v5 |  Era5, Era5Lev |  surface climate data, cloud cover levels data  |  Zen |
+| MERRA2 |  Modern Era (1980-present) Retrospective Analysis for Research and Applications |  Merra2, Merra2Lev |  climate data, climate data levels  |  Git, Zen |
+| CEMSFAS |  Copernicus Emergency Management Flood Analysis System |  CemsFas |  rivers discharge, snow depth, water runoff, soil water indices |  Zen |
