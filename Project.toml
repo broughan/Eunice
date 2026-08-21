@@ -1,7 +1,7 @@
 name = "Eunice"
 uuid = "04d1b65d-4e3e-458a-8e19-e3f9a096b2bf"
 authors = ["broughan <kevbroughan@gmail.com>"]
-version = "0.1.1"
+version = "0.1.2"
 
 [deps]
 Blink = "ad839575-38b3-5650-b840-f874b8c74a25"
